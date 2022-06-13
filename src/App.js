@@ -6,7 +6,6 @@ import AddMovie from "./Components/AddMovie/AddMovie";
 import Filter from "./Components/Filter/Filter.js";
 import { movies } from "./data.js";
 import Carousel from "react-bootstrap/Carousel";
-import { Button } from "react-bootstrap";
 import { Link, Route, Routes } from "react-router-dom";
 import Description from "./Components/Description/Description";
 
