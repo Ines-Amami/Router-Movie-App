@@ -1,0 +1,105 @@
+:root{
+  --background-dark: #fdfdff;
+  --text-light: rgb(255, 255, 255);
+  --text-lighter: rgb(252, 252, 252);
+  --spacing-s: 8px;
+  --spacing-m: 16px;
+  --spacing-l: 24px;
+  --spacing-xl: 32px;
+  --spacing-xxl: 64px;
+
+}
+.Container{
+    
+  max-width: 800px;
+padding: 0;
+margin:0px 180px ;
+}
+
+
+.hero-section{
+    align-items: flex-start;
+    background-image: linear-gradient(15deg, 0%, 150%);
+    display: flex;
+    min-height: 100%;
+    justify-content: center;
+    padding: var(--spacing-xxl) var(--spacing-l);
+  }
+  
+
+  
+  @media(min-width: 540px){
+    .card-grid{
+      grid-template-columns: repeat(2, 1fr); 
+    }
+  }
+  
+  @media(min-width: 960px){
+    .card-grid{
+      grid-template-columns: repeat(4, 1fr); 
+    }
+  }
+  
+  .card{
+   
+
+    box-shadow :0 5px 10px rgba( #000, .8 );
+    transform :translateZ( 0 );
+    transition :.3s;
+    list-style: none;
+    position: relative;
+  }
+  
+  .card:before{
+    content: '';
+    display: block;
+    padding-bottom: 150%;
+    width: 100%;
+  }
+  
+  .card__background{
+    background-size: cover;
+    background-position: center;
+    border-radius: var(--spacing-l);
+    bottom: 0;
+    
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform-origin: center;
+    transform: scale(1) translateZ(0);
+    transition: 
+      filter 200ms linear,
+      transform 200ms linear;
+  }
+  
+  .card:hover .card__background{
+    transform: scale(1.05) translateZ(0);
+  }
+  
+ 
+  
+  .card__content{
+    position: absolute;
+    width:350px;
+    margin-top: 200px;
+            padding: 20px;
+            padding-bottom: 10px;
+            font-size :20px;
+            background: none;
+            color :#fff;
+            text-shadow: 0 1px 0 rgba( #000, .3 );
+             background :linear-gradient( to top, rgba( #000, .3 ), transparent );
+            transform: translateY( 100% );
+            transition :.3s;
+ 
+  }
+  
+  .card__heading{
+    color: var(--text-lighter);
+  
+    text-shadow: 3px 3px 5px red;
+ 
+  
+  }

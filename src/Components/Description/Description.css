@@ -1,0 +1,7 @@
+.desc{
+  display: grid;
+    align-items: end;
+    justify-items: center;
+    justify-content: space-around; }
+.content{ border: 2px solid  red; 
+  border-radius: 25px;}
